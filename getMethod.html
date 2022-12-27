@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn1').click(function(){
+                alert($('p').text());
+            });
+            $('.btn2').click(function(){
+                alert($('p').html());
+            });
+            $('.btn3').click(function(){
+                alert($('input').val());
+            });
+            $('.btn4').click(function(){
+                alert($('input').attr("type"));
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="text"type="text" value="jquery">
+    <p>This is a <b>large</b> paragraph</p>
+    <button class="btn1">Display text</button>
+    <button class="btn2">Display html</button>
+    <button class="btn3">Display val</button>
+    <button class="btn4">Display attribute</button>
+    
+    
+    
+</body>
+</html>
