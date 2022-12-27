@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                 //$('p').parent().css({"color":"red","border":"2px solid"});
+                $('span').parents().css({"color":"red","border":"2px solid"});
+                
+            })
+            
+
+    </script>
+    <style>
+        .ancestors *{
+            color:grey;
+            border: 2px solid grey;
+            display:block;
+            /* padding:10px; */
+            /* //margin:10px; */
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="ancestors">
+        <div style="width:500px;">div (great-grandparent)
+          <div> (grandparent)  
+            <div>(direct parent)
+              <span>span</span>
+            </div>
+        </div>   
+    </div>
+    
+</body>
+</html>
