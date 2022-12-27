@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $('.down').click(function(){
+                    $('.div1').slideDown("slow");
+                });
+                $('.up').click(function(){
+                    $('.div2').slideUp("slow");
+                });
+                 
+            })
+
+    </script>
+</head>
+<body>
+    <div class="div1" style="height:200px;width:200px;background-color:aquamarine;display:none;"></div>
+    <div class="div2" style="height:200px;width:200px;background-color:red"></div>
+    <button class="down">slide down</button>
+    <button class="up">slide up</button>
+    
+</body>
+</html>
